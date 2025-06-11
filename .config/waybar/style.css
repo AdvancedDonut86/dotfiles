@@ -8,8 +8,8 @@
 }
 
 window#waybar {
-    background: rgba(18, 18, 18, 0.7);
-    border-radius: 16px;
+    background: rgba(18, 18, 18, 0.3);
+    border-radius: 0;
     padding: 5px;
     border-bottom: 1px solid #282828;
     color: #fcfcfc;
@@ -17,89 +17,78 @@ window#waybar {
 
 window#waybar,
 tooltip {
+    background: rgba(18, 18, 18, 0.5);
     color: #fcfcfc;
-}
-
-tooltip {
-    background: rgba(18, 18, 18, 0.9);
-    border-radius: 5px;
+    border-radius: 0;
     padding: 10px;
 }
 
 #workspaces,
 #tray {
-    background: #282828;
-    margin: 5px;
-    padding: 0 5px;
-    border-radius: 16px;
+    background: #d4d4d4;
+    color: #282828;
+    border-radius: 0;
 }
 
 #workspaces button {
     padding: 0 5px;
-    border-radius: 16px;
+    border-radius: 0;
     color: #928374;
 }
 
 #workspaces button.active {
-    color: #f4d9e1;
-    background-color: transparent;
+    color: #282828;
+    background-color: #e6b9c6;
 }
 
 #workspaces button:hover {
-    background-color: #E6B9C6;
-    color: black;
+    background-color: #d3869b;
+    color: #fcfcfc;
 }
 
 #custom-date, #clock, #battery, #pulseaudio, #network {
-    background: transparent;
-    padding: 5px;
-    margin: 1px;
-    border-radius: 8px;
+    background: #d4d4d4;
+    color: #282828;
+    border-radius: 0;
 }
 
 #custom-date {
     color: #D3869B;
 }
 
-#custom-power {
-    color: #24283b;
-    background-color: #db4b4b;
-    border-radius: 5px;
-    margin: 0 0 0 5px;
-    padding: 5px 10px;
-}
-
 #clock {
-    color: #E6B9C6;
-    background-color: #282828;
-    border-radius: 16px;
-    padding: 0 15px;
-    margin: 0 5px 0 5px;
+    color: #282828;
+    background-color: #d4d4d4;
+    border-radius: 0;
     font-weight: bold;
-    border-left: solid 1px #282738;
 }
 
 #network, #pulseaudio {
-    color: #f4d9e1;
-    border-radius: 8px;
+    color: #282828;
+    background: #d4d4d4;
+    border-radius: 0;
 }
 
 #pulseaudio.muted {
-    background: #282828;
-    color: #928374;
+    background: #7a7a7a;
+    color: #ffffff;
 }
 
 #window {
-    background: #282828;
-    padding: 0 15px;
-    border-radius: 16px;
-    margin: 5px;
+    background: #d4d4d4;
+    color: #282828;
+    border-radius: 0;
 }
 
 #cpu, #temperature, #memory, #disk {
-    background-color: #282828;
-    border-radius: 16px;
-    margin: 1px;
-    padding: 0 10px;
+    background-color: #d4d4d4;
+    color: #282828;
+    border-radius: 0;
     font-weight: bold;
+}
+
+
+#workspaces, #tray, #clock, #window, #cpu, #temperature, #memory, #disk, #custom-power, #custom-date, #battery, #pulseaudio, #network {
+	padding: 5px 10px;
+	margin: 5px;
 }
