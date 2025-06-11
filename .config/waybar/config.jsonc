@@ -2,12 +2,13 @@
     "layer": "botton",
     "position": "top",
     "height": 30,
-    "width": 1280,
+    // "width": 1280,
     "spacing": 4, 
     "modules-left": [
         "cpu",
 	"memory",
 	"temperature",
+	"battery",
 	"clock"
     ],
     "modules-center": [
@@ -16,20 +17,33 @@
     "modules-right": [
 	"tray",
         "pulseaudio",
-        "network",
-        "custom/power"
+        "network"
     ],
     // Modules config
+    "hyprland/workspaces": {
          "disable-scroll": true,
          "all-outputs": true,
          "warp-on-scroll": false,
-         "format": "{name}: {icon}",
+         "format": "{icon}",
          "format-icons": {
 		 "urgent": "",
 		 "active": "",
 		 "default": "󰧞"
          }
      },
+     "battery": {
+        "format": "{icon} {capacity}%",
+        "format-alt": "{icon} {time}",
+        "format-time": "{H}h {M}min",
+        "format-icons": ["", "", "", "", ""],
+        "interval": 30,
+        "states": {
+            "warning": 25,
+            "critical": 10
+        },
+        "full-at": 100,
+        "tooltip": true
+    },
     "tray": {
         "icon-size": 15,
         "spacing": 5
